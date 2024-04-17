@@ -42,7 +42,17 @@
     background-repeat: no-repeat;
     background-position: 150px;
 }
-
+.setFontSizeContainer {
+    display: flex;
+    justify-content: center;
+}
+.card__description_static {
+    margin-top: 0px !important;
+}
+.card__values-thc_static,
+.card__values-thc_static {
+    margin-top: 0px;
+}
 
 .card__newItem,
 .card__reccoItem {
@@ -120,7 +130,7 @@
 .card__bottomContainer {}
 
 .card__name {
-    padding-top: 10px;
+    padding-top: 7px;
     font-size: 27px;
     font-weight: bold;
     text-align: center;
@@ -140,7 +150,7 @@
 }
 
 .card__values-container {
-    padding-top:10px;
+    padding-top:7px;
     display: flex;
     justify-content: center;
     color: #fff;
@@ -161,6 +171,9 @@
     text-align: center;
     border: 1px solid #A8518A;
     transition: 0.3s;
+}
+.card__values-thc-name_static {
+    font-size: 16px !important;
 }
 
 .card__values-thc-name,

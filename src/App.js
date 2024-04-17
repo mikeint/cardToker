@@ -14,7 +14,7 @@ function App() {
     const showDiv = () => document.getElementById("hideorshow").style.display = "flex";
     const hideDiv = () => document.getElementById("hideorshow").style.display = "none";
 
-	console.log(cards)
+	//console.log(cards)
 	return (
 		<div>
 			<div id="hideorshow" className="addCardContainerMain">
