@@ -1,0 +1,298 @@
+.cardsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardsBGcolor {
+    width: 100%;
+    height: 100vh;
+}
+.cardsBGcolor-indica {
+    box-shadow: inset 0px 0px 250px 30px #8a2be28f;
+}
+.cardsBGcolor-sativa {
+    box-shadow: inset 0px 0px 250px 30px #91271a8f;
+}
+.cardsBGcolor-hybrid {
+    box-shadow: inset 0px 0px 250px 30px #117b4d8f;
+}
+
+.card {
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 0 1px 5px 0 #2e2e33;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+    height: 650px;
+    margin: 5px;
+}
+
+/* TOP CONTAINER */
+.card__topContainer {
+    width: 100%;
+    height: 140px;
+    background-color: #000;
+    color: blueviolet;
+    padding: 3px;
+    background-image: url("../imgs/logo_indica.png");
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position: 152px;
+}
+
+
+.card__newItem,
+.card__reccoItem {
+    width: 200px;
+    height: 15px;
+    font-weight: bold;
+    color: #000;
+    line-height: 15px;
+    font-size: 11px;
+    position: absolute;
+    right: -79px;
+    top: 12px;
+    transform: rotate(45deg);
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #fff;
+    background-color: #c5c557;
+    box-shadow: 2px 0px 10px 5px #c5c557;
+    overflow: hidden;
+}
+
+.card__reccoItem {
+    right: -180px;
+    top: 30px;
+    width: 435px;
+    font-weight: normal;
+    color: #fff;
+    border: 1px solid #adbab382;
+    background-color: #0b8341;
+    box-shadow: 2px 0px 10px 5px #0b8341;
+}
+
+.withoutNew {
+    right: -191px;
+    top: 20px;
+}
+
+.card__newItem::after,
+.card__reccoItem::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 0) 0%);
+}
+
+@keyframes shiny {
+    0% {
+        transform: scale(0) rotate(25deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1) rotate(25deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(50) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+.card__newItemHide,
+.card__reccoItemHide {
+    display: none;
+}
+
+/* end TOP CONTAINER */
+
+
+/* BOTTOM CONTAINER */
+.card__bottomContainer {}
+
+.card__name {
+    /* padding: 10px;
+    font-size: 14px; */
+    padding: 1px;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__nameCross {
+    padding: 0px 0px 3px 0px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__values-container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+
+.card__values-thc {
+    -webkit-print-color-adjust:exact;
+    width: 40%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    padding: 6px;
+    margin-right: 5px;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid #8a2be2;
+    transition: 0.3s;
+}
+
+.card__values-thc-name,
+.card__values-thc-value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card__values-cbd {
+    -webkit-print-color-adjust:exact;
+    width: 40%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    background: #000000;
+    padding: 6px;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid #8a2be2;
+}
+
+.card__description {
+    margin: 2px;
+    overflow-y: scroll;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__description::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card__price-container {
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    padding: 2px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-print-color-adjust:exact;
+}
+
+.card__image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+}
+
+.card__image img {
+    width: 120px;
+    margin-left: 70px;
+    margin-top: -60px;
+}
+/* end BOTTOM CONTAINER */
+
+
+
+.form-strain.Indica,
+.card__strain.Indica,
+.card__strain-smtext.Indica,
+.card__strain-smtext.Indica input {
+    color: #8a2be2;
+}
+
+.form-strain.Sativa,
+.card__strain.Sativa,
+.card__strain-smtext.Sativa,
+.card__strain-smtext.Sativa input {
+    color: #91271a;
+}
+
+.form-strain.Hybrid,
+.card__strain.Hybrid,
+.card__strain-smtext.Hybrid,
+.card__strain-smtext.Hybrid input {
+    color: #117b4d;
+}
+
+.card__values-thc.Indica,
+.card__values-cbd.Indica {
+    border: 1px solid #8a2be2;
+}
+
+.card__values-thc.Sativa,
+.card__values-cbd.Sativa {
+    border: 1px solid #91271a;
+}
+
+.card__values-thc.Hybrid,
+.card__values-cbd.Hybrid {
+    border: 1px solid #117b4d;
+}
+
+.card__topContainer.Indica {
+    -webkit-print-color-adjust:exact;
+    background-image: url("../imgs/logo_indica.png");
+}
+
+.card__topContainer.Sativa {
+    -webkit-print-color-adjust:exact;
+    background-image: url("../imgs/logo_sativa.png");
+}
+
+.card__topContainer.Hybrid {
+    -webkit-print-color-adjust:exact;
+    background-image: url("../imgs/logo_hybrid.png");
+}
+
+
+.card__ad {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}

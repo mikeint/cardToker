@@ -1,0 +1,384 @@
+@font-face {
+    font-family: fontFam;
+    src: url(../fonts/ClarendonBTRoman.ttf);
+}
+body {
+    font-size: 25px;
+    font-family: fontFam;
+}
+
+.addCardContainerMain {
+    display: flex;
+    width: 1030px;
+}
+.printContainerMain {
+    display: flex;
+    width: 1114px;
+}
+
+.addCarContainer {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1000px;
+    background: #0b834182;
+    padding: 20px;
+    font-size: 18px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.card__values-container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+
+.inputContainer {
+    width: 100%;
+    display: block;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.inputContainer input {
+    width: 100%;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #2e2e2e;
+    border: 0;
+    border-radius: 3px;
+}
+
+.inputPad {
+    padding-bottom: 20px;
+}
+
+
+/* ADD CARD BUTTON */
+.createBtnContainer {
+    width: 315px;
+    height: 60px;
+    margin: auto;
+}
+
+.createBtn {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    background: #0b834182;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 1px 5px 0px #2E2E33;
+    border-radius: 3px;
+}
+
+.createBtn:hover {
+    background: #0b8341e6;
+    box-shadow: none;
+}
+
+/* ADD CARD BUTTON */
+
+
+
+.addImgContainer {
+    width: 80px;
+    height: 100px !important;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.imgContainer {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.imgContainer:hover {
+    box-shadow: none;
+}
+
+.deleteImgBtn {
+    width: 150px;
+    cursor: pointer;
+    background: #dc555594;
+    color: #dc555594;
+    text-align: center;
+    transition: transform 0.3s ease-out;
+    transform: scaleY(0.15);
+    transform-origin: bottom;
+}
+
+.deleteImgBtn:hover {
+    background: #dc5555;
+    color: #ffffff;
+    position: absolute;
+    height: 120px;
+    line-height: 120px;
+    transform: scaleY(1);
+}
+
+.setNewContainer {
+    display: flex;
+    margin: auto; 
+}
+
+.newCheckBtn {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    accent-color: #80bd9b;
+}
+.onReserveCheck {
+    accent-color: #dc5555;
+}
+
+.newCheckLbl {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.submitImg {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 60px;
+    background: #e1e1e182;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+}
+
+.submitImg:hover {
+    background-color: #0b83415d;
+}
+
+
+/* STYLES FOR BACKEND static INPUTS */
+.form-strain {
+    width: 200px;
+    height: 40px;
+    font-size: 35px;
+}
+
+.form-name {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form-thc {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-amount {
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-price {
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-description {
+    width: 275px;
+    height: 160px;
+}
+
+
+.card__image_static {
+    animation: none !important;
+}
+
+
+.imgContainer_static {
+    width: 100% !important;
+    height: 100px !important;
+    margin: 0px !important;
+    padding-left: 10px;
+}
+
+.card_static {
+    box-shadow: 0 1px 5px 0px #2E2E33;
+    cursor: none;
+    width: 315px !important;
+    position: relative !important;
+    border: 5px solid black !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 10px !important;
+    background: #fff !important;
+    position: relative !important;
+    -webkit-transition: 0.6s !important;
+    transition: 0.6s !important;
+    -webkit-transform-style: preserve-3d !important;
+    transform-style: preserve-3d !important;
+    box-shadow: 0 1px 5px 0px #2E2E33 !important;
+    overflow: hidden !important;
+
+}
+
+.card_static:hover {
+    cursor: default;
+}
+
+.card__topContainer_static {
+    height: 135px !important;
+    background-size: 140px !important;
+    background-repeat: no-repeat !important;
+    background-position: 150px !important;
+}
+
+.cardsContainer_static {
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+
+.card__description_static {
+    margin: 10px !important;
+}
+
+.reccoCheckBtn {
+    margin-left: 10px;
+}
+
+.card__description_static textarea {
+    resize: none;
+} 
+
+.card__values-thc_static {
+    padding: 5px !important;
+    margin-top: 5px;
+    width: 85px !important;
+    height: 85px !important;
+    font-size: 20px !important;
+}
+.form-sub-name {
+    height: 40px;
+}
+
+.card__values-cbd_static {
+    font-size: 20px !important;
+}
+
+.card__price-container_static {
+    width: 110px !important;
+    height: 75px !important;
+    float: right;
+}
+
+.card__price-container_static .form-amount {
+    width: 80px;
+}
+
+.card__price-container_static .form-price {
+    width: 70px;
+}
+
+
+/* end STYLES FOR BACKEND INPUTS */
+
+
+
+
+.form-strain.Indica,
+.card__strain.Indica,
+.card__strain-smtext.Indica,
+.card__strain-smtext.Indica input {
+    color: #8a2be2;
+}
+
+.form-strain.Sativa,
+.card__strain.Sativa,
+.card__strain-smtext.Sativa,
+.card__strain-smtext.Sativa input {
+    color: #91271a;
+}
+
+.form-strain.Hybrid,
+.card__strain.Hybrid,
+.card__strain-smtext.Hybrid,
+.card__strain-smtext.Hybrid input {
+    color: #117b4d;
+}
+
+.card__values-thc.Indica,
+.card__values-cbd.Indica {
+    border: 1px solid #8a2be2;
+}
+
+.card__values-thc.Sativa,
+.card__values-cbd.Sativa {
+    border: 1px solid #91271a;
+}
+
+.card__values-thc.Hybrid,
+.card__values-cbd.Hybrid {
+    border: 1px solid #117b4d;
+}
+.card__topContainer.Indica {
+    background-image: url("../imgs/logo_indica.png");
+}
+
+.card__topContainer.Sativa {
+    background-image: url("../imgs/logo_sativa.png");
+}
+
+.card__topContainer.Hybrid {
+    background-image: url("../imgs/logo_hybrid.png");
+}
+
+.showBtn:hover {
+    cursor: pointer;
+}
+.hideBtn {
+  width: 90px;  
+  background-size: 70px;
+  background-position: center;
+  transition: 0.3s;
+}
+.hideBtn:hover {
+    background-image: url('../imgs/arrow.png');
+    animation: infiniteScrollBg 1s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes infiniteScrollBg {
+  100% {
+    background-position: 50% 0;
+  }
+  0%{
+    background-position: 50% (404px * 2);
+  }
+}
