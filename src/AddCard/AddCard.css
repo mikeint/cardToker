@@ -214,6 +214,7 @@ body {
 
 .card__image_static {
     animation: none !important;
+    bottom: 1px !important;
 }
 
 
@@ -296,6 +297,8 @@ body {
     width: 110px !important;
     height: 75px !important;
     float: right;
+    font-size: 12px !important;
+    padding: 2px !important;
 }
 
 .card__price-container_static .form-amount {
@@ -316,36 +319,36 @@ body {
 .card__strain.Indica,
 .card__strain-smtext.Indica,
 .card__strain-smtext.Indica input {
-    color: #8a2be2;
+    color: #A8518A;
 }
 
 .form-strain.Sativa,
 .card__strain.Sativa,
 .card__strain-smtext.Sativa,
 .card__strain-smtext.Sativa input {
-    color: #91271a;
+    color: #ED3237;
 }
 
 .form-strain.Hybrid,
 .card__strain.Hybrid,
 .card__strain-smtext.Hybrid,
 .card__strain-smtext.Hybrid input {
-    color: #117b4d;
+    color: #068939;
 }
 
 .card__values-thc.Indica,
 .card__values-cbd.Indica {
-    border: 1px solid #8a2be2;
+    border: 1px solid #A8518A;
 }
 
 .card__values-thc.Sativa,
 .card__values-cbd.Sativa {
-    border: 1px solid #91271a;
+    border: 1px solid #ED3237;
 }
 
 .card__values-thc.Hybrid,
 .card__values-cbd.Hybrid {
-    border: 1px solid #117b4d;
+    border: 1px solid #068939;
 }
 .card__topContainer.Indica {
     background-image: url("../imgs/logo_indica.png");

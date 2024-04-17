@@ -109,6 +109,11 @@ const AddCard = ({ onDataChange }) => {
                                 >
                                     <option value="Pre-roll">Pre-roll</option>
                                     <option value="Flower">Flower</option>
+                                    <option value="Edible">Edible</option>
+                                    <option value="Vape">Vape</option> 
+                                    <option value="Oil">Oil</option>
+                                    <option value="Beverage">Beverage</option>
+                                    <option value="Concentrate">Concentrate</option>
                                 </select>
                             </div>
                         </div>
@@ -183,7 +188,7 @@ const AddCard = ({ onDataChange }) => {
                                             accept="image/*"
                                             onChange={handleImageChange}
                                         /> 
-                                        <img className="imgStyle" src={company_image_new} alt={'preview'} />
+                                        {/* <img className="imgStyle" src={company_image_new} alt={'preview'} /> */}
                                     </div>
                                 </div>
                             </div>

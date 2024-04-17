@@ -8,39 +8,39 @@
     height: 100vh;
 }
 .cardsBGcolor-indica {
-    box-shadow: inset 0px 0px 250px 30px #8a2be28f;
+    box-shadow: inset 0px 0px 250px 30px #A8518A8f;
 }
 .cardsBGcolor-sativa {
-    box-shadow: inset 0px 0px 250px 30px #91271a8f;
+    box-shadow: inset 0px 0px 250px 30px #ED32378f;
 }
 .cardsBGcolor-hybrid {
-    box-shadow: inset 0px 0px 250px 30px #117b4d8f;
+    box-shadow: inset 0px 0px 250px 30px #0689398f;
 }
 
 .card {
     background: #fff;
-    border: 3px solid #000;
+    border: 10px solid #000;
     box-shadow: 0 1px 5px 0 #2e2e33;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    width: 480px;
-    height: 650px;
-    margin: 5px;
+    width: 316px;
+    height: 640px;
+    margin: 1px;
 }
 
 /* TOP CONTAINER */
 .card__topContainer {
     width: 100%;
-    height: 140px;
+    height: 160px;
     background-color: #000;
     color: blueviolet;
     padding: 3px;
     background-image: url("../imgs/logo_indica.png");
-    background-size: 280px;
+    background-size: 170px;
     background-repeat: no-repeat;
-    background-position: 152px;
+    background-position: 150px;
 }
 
 
@@ -120,9 +120,7 @@
 .card__bottomContainer {}
 
 .card__name {
-    /* padding: 10px;
-    font-size: 14px; */
-    padding: 1px;
+    padding-top: 10px;
     font-size: 27px;
     font-weight: bold;
     text-align: center;
@@ -130,7 +128,7 @@
 }
 
 .card__nameCross {
-    padding: 0px 0px 3px 0px;
+    padding: 0px 0px 10px 0px;
     text-align: center;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -145,7 +143,7 @@
 
 .card__values-thc {
     -webkit-print-color-adjust:exact;
-    width: 40%;
+    width: 35%;
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -155,21 +153,21 @@
     margin-right: 5px;
     font-size: 10px;
     text-align: center;
-    border: 1px solid #8a2be2;
+    border: 1px solid #A8518A;
     transition: 0.3s;
 }
 
 .card__values-thc-name,
 .card__values-thc-value {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .card__values-cbd {
     -webkit-print-color-adjust:exact;
-    width: 40%;
+    width: 35%;
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -179,13 +177,13 @@
     padding: 6px;
     font-size: 10px;
     text-align: center;
-    border: 1px solid #8a2be2;
+    border: 1px solid #A8518A;
 }
 
 .card__description {
-    margin: 2px;
+    margin: 0px 10px 0px 10px;
     overflow-y: scroll;
-    font-size: 19px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -195,14 +193,14 @@
 
 
 .card__price-container {
-    height: 35px;
+    height: 60px;
     position: absolute;
     bottom: 0;
     right: 0;
     background: #000;
-    padding: 2px;
+    padding: 5px;
     color: #fff;
-    font-size: 12px;
+    font-size: 24px; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -224,8 +222,13 @@
     background-repeat: no-repeat;
     background-position: center; 
     position: absolute;
-    bottom: 1px;
+    bottom: -22px;
     z-index: 1;
+}
+
+.card__strain {
+    font-size: 50px;
+    padding-top: 10px;
 }
 
 .card__image img {
@@ -241,36 +244,36 @@
 .card__strain.Indica,
 .card__strain-smtext.Indica,
 .card__strain-smtext.Indica input {
-    color: #8a2be2;
+    color: #A8518A;
 }
 
 .form-strain.Sativa,
 .card__strain.Sativa,
 .card__strain-smtext.Sativa,
 .card__strain-smtext.Sativa input {
-    color: #91271a;
+    color: #ED3237;
 }
 
 .form-strain.Hybrid,
 .card__strain.Hybrid,
 .card__strain-smtext.Hybrid,
 .card__strain-smtext.Hybrid input {
-    color: #117b4d;
+    color: #068939;
 }
 
 .card__values-thc.Indica,
 .card__values-cbd.Indica {
-    border: 1px solid #8a2be2;
+    border: 4px solid #A8518A;
 }
 
 .card__values-thc.Sativa,
 .card__values-cbd.Sativa {
-    border: 1px solid #91271a;
+    border: 4px solid #ED3237;
 }
 
 .card__values-thc.Hybrid,
 .card__values-cbd.Hybrid {
-    border: 1px solid #117b4d;
+    border: 4px solid #068939;
 }
 
 .card__topContainer.Indica {
