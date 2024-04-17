@@ -25,14 +25,16 @@ const CardsPage = ({card={}}) => {
                     <div className="card__bottomContainer">
                         <div className="card__name">{card.name}</div>
                         {card.nameCross ? <div className="card__nameCross">{card.nameCross}</div> : null}
+                        {card.type === "Vape" ?<div className="card__nameVape">510 Thread Cartridge</div> : ''}
+
                         <div className="card__values-container">
                             <div className={'card__values-thc ' + card.strain}>
                                 <div className="card__values-thc-name">THC</div>
-                                <div className="card__values-thc-value">{card.thc}%</div>
+                                <div className="card__values-thc-value">{card.thc}</div>
                             </div>
                             <div className={'card__values-cbd ' + card.strain}>
                                 <div className="card__values-thc-name">CBD</div>
-                                <div className="card__values-thc-value">{card.cbd}%</div>
+                                <div className="card__values-thc-value">{card.cbd}</div>
                             </div>
                         </div>
                         <div className="card__description">{card.description}</div>
@@ -45,7 +47,7 @@ const CardsPage = ({card={}}) => {
                         )}
                         <div className="card__price-container">
                             <div className="card__grams">{card.amount}</div>
-                            <div className="card__price">${card.price}</div>
+                            <div className={card.saleItem ? 'card__priceYellow' : 'card__price'}>${card.price}</div>
                         </div>
                     </div>
                 </section>

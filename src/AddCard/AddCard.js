@@ -15,9 +15,12 @@ const AddCard = ({ onDataChange }) => {
         price: '',
         data_id: '',
         thumbnail: '',
+        isTypeVape: '',
 		company_image_new: null,
         newCheckBtn: false,
         recommendCheckBtn: false,
+        saleItem: false,
+        radioState: Array(3).fill(0),
     });
 
     const {
@@ -30,9 +33,12 @@ const AddCard = ({ onDataChange }) => {
         description,
         amount,
         price,
+        isTypeVape,
 		company_image_new,
         newCheckBtn,
         recommendCheckBtn,
+        saleItem,
+        radioState
     } = state;
 
     useEffect(() => {
@@ -60,6 +66,7 @@ const AddCard = ({ onDataChange }) => {
 		})
 		data.readAsDataURL(e.target.files[0]);
     };
+    
 
     return (
         <div className="cardsContainer">
@@ -78,6 +85,10 @@ const AddCard = ({ onDataChange }) => {
                     />
                     <label htmlFor="recommendCheckBtn" className="newCheckLbl">
                         Recommend
+                    </label>
+                    <input type="checkbox" className="newCheckBtn" name="saleItem" onChange={handleState} checked={saleItem} />
+                    <label htmlFor="newCheckBtn" className="newCheckLbl">
+                        Sale
                     </label>
                 </div>
 
@@ -138,6 +149,7 @@ const AddCard = ({ onDataChange }) => {
                                     value={nameCross}
                                 />
                             </div>
+
                             <div className="card__values-container">
                                 <div className={'card__values-thc card__values-thc_static ' + strain}>
                                     <div className="card__values-thc-name">THC</div>
@@ -150,7 +162,6 @@ const AddCard = ({ onDataChange }) => {
                                             onChange={handleState}
                                             value={thc}
                                         />
-                                        %
                                     </div>
                                 </div>
                                 <div className={'card__values-cbd card__values-thc_static ' + strain}>
@@ -164,10 +175,21 @@ const AddCard = ({ onDataChange }) => {
                                             onChange={handleState}
                                             value={cbd}
                                         />
-                                        %
                                     </div>
                                 </div>
                             </div>
+
+{/* 
+                            <div className="setNewContainer">
+                                <input type="radio" className="newCheckBtn" name="1" onChange={handleState} checked={radioState === 1 ? true : false} />
+                                <label htmlFor="1" className="newCheckLbl">1</label>
+                                <input type="radio" className="newCheckBtn" name="2" onChange={handleState} checked={radioState === 2 ? true : false} />
+                                <label htmlFor="2" className="newCheckLbl">2</label>
+                                <input type="radio" className="newCheckBtn" name="3" onChange={handleState} checked={radioState === 3 ? true : false} />
+                                <label htmlFor="3" className="newCheckLbl">3</label>
+                            </div> */}
+
+                        
                             <div className="card__description card__description_static">
                                 <textarea
                                     name="description"
