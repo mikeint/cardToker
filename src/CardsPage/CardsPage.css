@@ -200,10 +200,10 @@
 }
 
 .card__description {
-    margin: 0px 10px 0px 10px;
+    margin: 7px 7px 0px 7px;
     overflow-y: scroll;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 .card__description::-webkit-scrollbar {
@@ -214,6 +214,11 @@
     color: #ffff0b;
     outline: rgb(228, 82, 82);
     text-shadow: -1px -1px 0 #c83434, 1px -1px 0 #c43838, -1px 1px 0 #d42f2f, 1px 1px 0 #cc2c2c;
+    font-size: 30px;
+}
+
+.card__price_l {
+    font-size: 30px;
 }
 
 .card__price-container {
@@ -254,6 +259,9 @@
     font-size: 50px;
     padding-top: 10px;
 }
+.card__strain_static {
+    padding: 0px;
+}
 
 .card__image img {
     width: 120px;
@@ -262,6 +270,14 @@
 }
 /* end BOTTOM CONTAINER */
 
+.terpValue {
+    padding-top: 7px;
+    padding-left:7px;
+    color: #ED3237;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 .form-strain.Indica,

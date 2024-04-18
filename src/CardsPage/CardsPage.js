@@ -37,6 +37,14 @@ const CardsPage = ({card={}}) => {
                                 <div className="card__values-thc-value">{card.cbd}</div>
                             </div>
                         </div>
+
+                        {
+                            card.terps ?
+                                <div className='terpValue'>Terps: {card.terps}%</div>
+                                :
+                                ''
+                        }
+                        
                         <div className="card__description" style={{ fontSize: card.fontSize+"px"}}>{card.description}</div>
                         {card.company_image_new ? (
                             <div className="card__image">
@@ -47,7 +55,7 @@ const CardsPage = ({card={}}) => {
                         )}
                         <div className="card__price-container">
                             <div className="card__grams">{card.amount}</div>
-                            <div className={card.saleItem ? 'card__priceYellow' : 'card__price'}>${card.price}</div>
+                            <div className={card.saleItem ? 'card__priceYellow' : 'card__price card__price_l'}>${card.price}</div>
                         </div>
                     </div>
                 </section>
