@@ -4,8 +4,8 @@ import './AddCard.css';
 const AddCard = ({ onDataChange }) => {
 
     const [state, setState] = useState({
-        strain: 'Indica',
-        type: 'Pre-roll',
+        strain: '',
+        type: '',
         name: '',
         nameCross: '',
         thc: '',
@@ -102,6 +102,7 @@ const AddCard = ({ onDataChange }) => {
                                     onChange={handleState}
                                     value={strain}
                                 >
+                                    <option value="">Choose...</option>
                                     <option value="Indica">Indica</option>
                                     <option value="Sativa">Sativa</option>
                                     <option value="Hybrid">Hybrid</option>
