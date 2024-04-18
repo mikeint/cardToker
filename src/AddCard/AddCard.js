@@ -13,6 +13,7 @@ const AddCard = ({ onDataChange }) => {
         description: '',
         amount: '',
         price: '',
+        terps: '',
         data_id: '',
         thumbnail: '',
         isTypeVape: '',
@@ -30,6 +31,7 @@ const AddCard = ({ onDataChange }) => {
         nameCross,
         thc,
         cbd,
+        terps,
         description,
         amount,
         newCheckBtn,
@@ -94,7 +96,7 @@ const AddCard = ({ onDataChange }) => {
                 <div className="front">
                     <section>
                         <div className={'card__topContainer card__topContainer_static ' + strain}>
-                            <div className="card__strain">
+                            <div className="card__strain card__strain_static">
                                 <select
                                     name="strain"
                                     type="text"
@@ -177,8 +179,20 @@ const AddCard = ({ onDataChange }) => {
                                 </div>
                             </div>
 
+                            <div className="card__values-thc-value">
+                                <input
+                                    name="terps"
+                                    type="text"
+                                    placeholder="terps"
+                                    className="form-thc"
+                                    onChange={handleState}
+                                    value={terps}
+                                />
+                            </div>
+
+
                             <input type="range" className="input-slider" name="fontSize" min="10" max="30" step="1" value={fontSize} onChange={handleState} />
-                            <label for="input-slider" class="number--label">{fontSize}</label>
+                            <label htmlFor="input-slider" className="number--label">{fontSize}</label>
                         
                             <div className="card__description card__description_static">
                                 <textarea
