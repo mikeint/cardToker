@@ -20,7 +20,7 @@ const AddCard = ({ onDataChange }) => {
         newCheckBtn: false,
         recommendCheckBtn: false,
         saleItem: false,
-        radioState: 15,
+        fontSize: 10,
     });
 
     const {
@@ -36,6 +36,7 @@ const AddCard = ({ onDataChange }) => {
         recommendCheckBtn,
         saleItem,
         price,
+        fontSize,
     } = state;
 
     useEffect(() => {
@@ -63,7 +64,6 @@ const AddCard = ({ onDataChange }) => {
 		})
 		data.readAsDataURL(e.target.files[0]);
     };
-    
 
     return (
         <div className="cardsContainer">
@@ -176,15 +176,8 @@ const AddCard = ({ onDataChange }) => {
                                 </div>
                             </div>
 
-                            <div className="setFontSizeContainer">
-                                <input type="radio" className="newCheckBtn" value="10" name="radioState" onChange={handleState} />
-                                <input type="radio" className="newCheckBtn" value="11" name="radioState" onChange={handleState} />
-                                <input type="radio" className="newCheckBtn" value="12" name="radioState" onChange={handleState} />
-                                <input type="radio" className="newCheckBtn" value="14" name="radioState" onChange={handleState} />
-                                <input type="radio" className="newCheckBtn" value="18" name="radioState" onChange={handleState} />
-                                <input type="radio" className="newCheckBtn" value="22" name="radioState" onChange={handleState} />
-                            </div>
-
+                            <input type="range" className="input-slider" name="fontSize" min="10" max="30" step="1" value={fontSize} onChange={handleState} />
+                            <label for="input-slider" class="number--label">{fontSize}</label>
                         
                             <div className="card__description card__description_static">
                                 <textarea

@@ -37,7 +37,7 @@ const CardsPage = ({card={}}) => {
                                 <div className="card__values-thc-value">{card.cbd}</div>
                             </div>
                         </div>
-                        <div className="card__description" style={{ fontSize: card.radioState+"px"}}>{card.description}</div>
+                        <div className="card__description" style={{ fontSize: card.fontSize+"px"}}>{card.description}</div>
                         {card.company_image_new ? (
                             <div className="card__image">
                                 <img className="imgStyle" src={card.company_image_new} alt={'preview'} />

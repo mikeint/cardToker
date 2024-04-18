@@ -377,3 +377,7 @@ body {
     background-position: 50% (404px * 2);
   }
 } 
+
+.input-slider {
+    width: 85%;
+}
